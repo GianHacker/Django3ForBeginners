@@ -1,4 +1,4 @@
-""" from random import randrange, randint
+from random import randrange, randint
 
 # variables
 fName = input("Your first name: ") # Example for string variable
@@ -98,7 +98,7 @@ exList.insert(0,'Vivaan') # insert() is to add an element in the specified index
 exList.extend(exTuple) # extend() will add iterable items (list, set, tuple e.t.c) to the existing list
 exList.pop() # pop() will remove an element in the specified index, if index isn't specified it'll remove the last element
 exList.remove('Pranuthi') # remove() will delete first existance  of the specified value
-exList.clear() # clear() will remove all elements in the list """
+exList.clear() # clear() will remove all elements in the list
 
 # Set Methods
 ''' Union, Intersection, Difference, Symmetric Difference'''
@@ -109,7 +109,6 @@ print(setPets)
 setPetsB = setPets.add('Tigers')
 # Intersection
 print(setPetsB.intersection(setPets)) # revisit this line again to sort the issue.
-
 
 
 
