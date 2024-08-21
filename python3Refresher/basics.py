@@ -102,13 +102,37 @@ exList.clear() # clear() will remove all elements in the list
 
 # Set Methods
 ''' Union, Intersection, Difference, Symmetric Difference'''
-# Add() method is to add an object to the set
+
 setPets = {'parrots', 'monkeys', 'tigers', 'lions'}
-setPets.add('sparrows')
+setPets.add('sparrows') # Add() method is to add an object to the set
 print(setPets)
 setPetsB = setPets.add('Tigers')
-# Intersection
-print(setPetsB.intersection(setPets)) # revisit this line again to sort the issue.
+print(setPets, setPetsB)
+print(type(setPetsB)) # Learn more about this why it is of type None
+print(type(setPets))
+#x = setPets.intersection(setPetsB) # This isn't returning the common elements since setPetsB is of type None
+
+a = set()
+b = set()
+for i in range(1,10):
+    a.add(i)
+    b.add(i+5)
+
+allNumbers = a.union(b) # Union
+print(allNumbers)
+commonNumbers = a.intersection(b) # Intersection
+print(commonNumbers) 
+print(a.intersection(b) == b.intersection(a))
+
+# Iterators
+print(exList)
+exIter = iter(exList)
+""" print(next(exIter))
+print(next(exIter))
+print(next(exIter)) """
+
+
+
 
 
 
