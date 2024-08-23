@@ -125,11 +125,11 @@ print(commonNumbers)
 print(a.intersection(b) == b.intersection(a))
 
 # Iterators
-print(exList)
-exIter = iter(exList)
-""" print(next(exIter))
+print(allNumbers)
+exIter = iter(allNumbers)
 print(next(exIter))
-print(next(exIter)) """
+print(next(exIter))
+print(next(exIter))
 
 
 
